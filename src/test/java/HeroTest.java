@@ -10,6 +10,11 @@ public class HeroTest {
     @Test
     public void Task_instantiatesWithName_String() {
         Hero hero = new Hero("Jon",7,"sleep","light");
-        assertEquals("", hero.getName());
+        assertEquals("Jon", hero.getName());
+    }
+    @Test
+    public void Task_instantiatesWithAge_int() {
+        Hero hero = new Hero("Jon",7,"sleep","light");
+        assertEquals(7, hero.getAge());
     }
 }
