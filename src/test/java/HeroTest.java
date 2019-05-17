@@ -7,4 +7,9 @@ public class HeroTest {
         Hero hero = new Hero("",0,"","");
         assertTrue(hero instanceof Hero);
     }
+    @Test
+    public void Task_instantiatesWithName_String() {
+        Hero hero = new Hero("Jon",7,"sleep","light");
+        assertEquals("", hero.getName());
+    }
 }

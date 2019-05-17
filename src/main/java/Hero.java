@@ -11,4 +11,8 @@ public class Hero {
         mPower = power;
         mWeakness = weakness;
     }
+
+    public String getName(){
+        return mName;
+    }
 }
