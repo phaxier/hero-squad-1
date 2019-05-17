@@ -18,4 +18,7 @@ public class Hero {
     public int getAge(){
         return mAge;
     }
+    public String getPower(){
+        return mPower;
+    }
 }

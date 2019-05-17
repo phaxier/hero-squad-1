@@ -17,4 +17,9 @@ public class HeroTest {
         Hero hero = new Hero("Jon",7,"sleep","light");
         assertEquals(7, hero.getAge());
     }
+    @Test
+    public void Task_instantiatesWithPower_String() {
+        Hero hero = new Hero("Jon",7,"sleep","light");
+        assertEquals("sleep", hero.getPower());
+    }
 }
