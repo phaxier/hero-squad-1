@@ -21,4 +21,7 @@ public class Hero {
     public String getPower(){
         return mPower;
     }
+    public String getWeakness(){
+        return mWeakness;
+    }
 }

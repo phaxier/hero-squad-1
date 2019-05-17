@@ -22,4 +22,9 @@ public class HeroTest {
         Hero hero = new Hero("Jon",7,"sleep","light");
         assertEquals("sleep", hero.getPower());
     }
+    @Test
+    public void Task_instantiatesWithWeakness_String() {
+        Hero hero = new Hero("Jon",7,"sleep","light");
+        assertEquals("light", hero.getWeakness());
+    }
 }
