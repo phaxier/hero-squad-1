@@ -1,3 +1,18 @@
+<h1>Hero list!</h1>
+
+#if ($heroes)
+  <ul>
+    #foreach ($hero in $heroes)
+      <li>$hero.getName()</li>
+      <li>$hero.getAge()</li>
+      <li>$hero.getWeakness()</li>
+      <li>$hero.getPower()</li>
+    #end
+  </ul>
+#else
+  <p>No heroes!</p>
+#end
+
 <h1>Heroes</h1>
 
 <p>Add a new Hero:</p>
