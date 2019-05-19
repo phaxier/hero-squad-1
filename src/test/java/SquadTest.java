@@ -40,4 +40,17 @@ public class SquadTest {
         Squad squad = new Squad("Radion", "Save the people", "13");
         assertEquals(6, squad.getId());
     }
+    @Test
+    public void find_returnsSquadWithSameId_secondSquad() {
+        Squad.clear();
+        Squad squad = new Squad("Mbogi", "Save the universe", "12");
+        Squad squadTwo = new Squad("Radion", "Save the people", "13");
+        assertEquals(Squad.find(squadTwo.getId()), squadTwo);
+    }
+    @Test
+    public void getTasks_initiallyReturnsEmptyList_ArrayList() {
+        Squad.clear();
+        Squad squadTwo = new Squad("Radion", "Save the people", "13");
+        assertEquals(0, squadTwo.getSquads().size());
+    }
 }
