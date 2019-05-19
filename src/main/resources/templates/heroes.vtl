@@ -1,14 +1,29 @@
 <h1>Hero list!</h1>
 
 #if ($heroes)
-  <ul>
-    #foreach ($hero in $heroes)
-      <li>$hero.getName()</li>
-      <li>$hero.getAge()</li>
-      <li>$hero.getWeakness()</li>
-      <li>$hero.getPower()</li>
+   <table class="table table-striped">
+   <thead class="thead-dark">
+   <tr>
+       <th scope="col">Name</th>
+       <th scope="col">Age</th>
+       <th scope="col">Power</th>
+       <th scope="col">Weakness</th>
+   </tr>
+   </thead>
+   #foreach ($hero in $heroes)
+   <tbody>
+   <tr>
+       <td>$hero.getName()</td>
+       <td>$hero.getAge()</td>
+       <td>$hero.getPower()</td>
+       <td>$hero.getWeakness()</td>
+     </tr>
+   </tbody>
     #end
-  </ul>
+   </table>
+   <a href ='/'>Go Back</a>
+   <a href="/heroes/new" class= "norm">Add a  Hero</a>
 #else
-  <p>No heroes!</p>
+ <a href="/heroes/new" class= "norm">Add a new Hero</a>
 #end
+
