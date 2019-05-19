@@ -8,22 +8,22 @@ public class HeroTest {
         assertTrue(hero instanceof Hero);
     }
     @Test
-    public void Task_instantiatesWithName_String() {
+    public void Hero_instantiatesWithName_String() {
         Hero hero = new Hero("Jon","7","sleep","light");
         assertEquals("Jon", hero.getName());
     }
     @Test
-    public void Task_instantiatesWithAge_int() {
+    public void Hero_instantiatesWithAge_int() {
         Hero hero = new Hero("Jon","8","sleep","light");
-        assertEquals(7, hero.getAge());
+        assertEquals("8", hero.getAge());
     }
     @Test
-    public void Task_instantiatesWithPower_String() {
+    public void Hero_instantiatesWithPower_String() {
         Hero hero = new Hero("Jon","8","sleep","light");
         assertEquals("sleep", hero.getPower());
     }
     @Test
-    public void Task_instantiatesWithWeakness_String() {
+    public void Hero_instantiatesWithWeakness_String() {
         Hero hero = new Hero("Jon","8","sleep","light");
         assertEquals("light", hero.getWeakness());
     }
@@ -45,5 +45,11 @@ public class HeroTest {
         Hero.clear();
         Hero hero = new Hero("Juan","9","speed", "faster bird");
         assertEquals(1, hero.getId());
+    }
+    @Test
+    public void find_returnsTaskWithSameId_secondTask() {
+        Hero hero = new Hero("Juan","9","speed", "faster bird");
+        Hero heroTwo = new Hero("Juanita","19","sleep", "light");
+        assertEquals(Hero.find(heroTwo.getId()), heroTwo);
     }
 }
