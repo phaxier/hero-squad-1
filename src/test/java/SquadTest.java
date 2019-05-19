@@ -29,4 +29,10 @@ public class SquadTest {
         assertEquals(true, Squad.all().contains(squad));
         assertEquals(true, Squad.all().contains(squadTwo));
     }
+    @Test
+    public void clear_emptiesAllCategoriesFromList_0() {
+        Squad squadTwo = new Squad("Radion", "Save the people", "13");
+        Squad.clear();
+        assertEquals(Squad.all().size(), 0);
+    }
 }
