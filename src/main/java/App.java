@@ -44,5 +44,28 @@ public class App {
 
             return new ModelAndView(model, layout);
         },new VelocityTemplateEngine());
+
+        get("/squads/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("template", "templates/squad-form.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        get("/squads", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("categories", Squad.all());
+            model.put("template", "templates/squads.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        post("/squads", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            String name = request.queryParams("name");
+            String cause = request.queryParams("name");
+            String max = request.queryParams("name");
+            Squad squad = new Squad(name, cause, max);
+            model.put("template", "templates/squads-success.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
     }
 }
