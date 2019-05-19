@@ -8,4 +8,8 @@ public class Squad {
         mCause = cause;
         mMaximum = maximum;
     }
+
+    public String getName(){
+        return mName;
+    }
 }

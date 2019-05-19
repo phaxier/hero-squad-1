@@ -7,5 +7,9 @@ public class SquadTest {
         Squad squad = new Squad("Mbogi", "Save the universe", "12");
         assertTrue(squad instanceof Squad);
     }
-
+    @Test
+    public void squad_instantiatesWithName_String() {
+        Squad squad = new Squad("Mbogi", "Save the universe", "12");
+        assertEquals("Mbogi", squad.getName());
+    }
 }
