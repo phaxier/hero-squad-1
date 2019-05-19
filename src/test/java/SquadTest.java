@@ -30,9 +30,14 @@ public class SquadTest {
         assertEquals(true, Squad.all().contains(squadTwo));
     }
     @Test
-    public void clear_emptiesAllCategoriesFromList_0() {
+    public void clear_emptiesAllSquadsFromList_0() {
         Squad squadTwo = new Squad("Radion", "Save the people", "13");
         Squad.clear();
         assertEquals(Squad.all().size(), 0);
+    }
+    @Test
+    public void getId_squadsInstantiateWithAnId_6() {
+        Squad squad = new Squad("Radion", "Save the people", "13");
+        assertEquals(6, squad.getId());
     }
 }

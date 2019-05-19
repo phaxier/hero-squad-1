@@ -6,12 +6,14 @@ public class Squad {
     private String mCause;
     private String mMaximum;
     private static List<Squad> instances = new ArrayList<>();
+    private int mId;
 
     public Squad(String name, String cause, String maximum){
         mName = name;
         mCause = cause;
         mMaximum = maximum;
         instances.add(this);
+        mId = instances.size();
     }
 
     public String getName(){
@@ -34,4 +36,7 @@ public class Squad {
         instances.clear();
     }
 
+    public int getId() {
+        return mId;
+    }
 }
