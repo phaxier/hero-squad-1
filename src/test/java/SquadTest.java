@@ -12,4 +12,9 @@ public class SquadTest {
         Squad squad = new Squad("Mbogi", "Save the universe", "12");
         assertEquals("Mbogi", squad.getName());
     }
+    @Test
+    public void squad_instantiatesWithCause_String() {
+        Squad squad = new Squad("Mbogi", "Save the universe", "12");
+        assertEquals("Save the universe", squad.getCause());
+    }
 }

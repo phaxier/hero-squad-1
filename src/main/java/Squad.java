@@ -12,4 +12,8 @@ public class Squad {
     public String getName(){
         return mName;
     }
+
+    public String getCause(){
+        return mCause;
+    }
 }
