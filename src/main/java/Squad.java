@@ -7,7 +7,7 @@ public class Squad {
     private String mMaximum;
     private static List<Squad> instances = new ArrayList<>();
     private int mId;
-    private List<Squad> mSquads;
+    private List<Hero> mHeroes;
 
     public Squad(String name, String cause, String maximum){
         mName = name;
@@ -15,7 +15,7 @@ public class Squad {
         mMaximum = maximum;
         instances.add(this);
         mId = instances.size();
-        mSquads = new ArrayList<Squad>();
+        mHeroes = new ArrayList<Hero>();
 
     }
 
@@ -47,7 +47,11 @@ public class Squad {
         return instances.get(id - 1);
     }
 
-    public List<Squad> getSquads() {
-        return mSquads;
+    public List<Hero> getHeroes() {
+        return mHeroes;
+    }
+
+    public void addHero(Hero hero) {
+        mHeroes.add(hero);
     }
 }

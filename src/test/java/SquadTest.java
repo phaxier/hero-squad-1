@@ -51,6 +51,13 @@ public class SquadTest {
     public void getTasks_initiallyReturnsEmptyList_ArrayList() {
         Squad.clear();
         Squad squadTwo = new Squad("Radion", "Save the people", "13");
-        assertEquals(0, squadTwo.getSquads().size());
+        assertEquals(0, squadTwo.getHeroes().size());
+    }
+    @Test
+    public void addTask_addsTaskToList_true() {
+        Squad squadTwo = new Squad("Radion", "Save the people", "13");
+        Hero hero = new Hero("Juan","8","speed", "faster bird");
+        squadTwo.addHero(hero);
+        assertTrue(squadTwo.getHeroes().contains(hero));
     }
 }
