@@ -16,4 +16,8 @@ public class Squad {
     public String getCause(){
         return mCause;
     }
+
+    public String getMax(){
+        return mMaximum;
+    }
 }

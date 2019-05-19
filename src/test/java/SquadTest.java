@@ -17,4 +17,9 @@ public class SquadTest {
         Squad squad = new Squad("Mbogi", "Save the universe", "12");
         assertEquals("Save the universe", squad.getCause());
     }
+    @Test
+    public void squad_instantiatesWithMaximum_String() {
+        Squad squad = new Squad("Mbogi", "Save the universe", "12");
+        assertEquals("12", squad.getMax());
+    }
 }
