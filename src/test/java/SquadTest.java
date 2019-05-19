@@ -22,4 +22,11 @@ public class SquadTest {
         Squad squad = new Squad("Mbogi", "Save the universe", "12");
         assertEquals("12", squad.getMax());
     }
+    @Test
+    public void all_returnsAllInstancesOfSquad_true() {
+        Squad squad = new Squad("Mbogi", "Save the universe", "12");
+        Squad squadTwo = new Squad("Radion", "Save the people", "13");
+        assertEquals(true, Squad.all().contains(squad));
+        assertEquals(true, Squad.all().contains(squadTwo));
+    }
 }
