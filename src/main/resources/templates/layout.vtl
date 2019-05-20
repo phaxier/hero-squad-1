@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>To Do List</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>HERO SQUAD</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="stylesheet" type="text/css" href="/mdb.min.css">
   </head>
   <body>
-    <div class="container">
-      #parse( $template )
-    </div>
+    <div class="container-fluid">
+    <ul class="nav aqua-gradient py-4 mb-4 font-weight-bold z-depth-1">
+      <div class="col col-sm-2">
+            <a href="/">
+                <img src="../avengers.svg" alt="">
+                <div class="mask rgba-white-light"></div>
+            </a>
+        </div>
+      <li class="nav-item">
+        <a class="nav-link active white-text" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link white-text" href="/squads">Squads</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link white-text disabled" href="#">About</a>
+      </li>
+    </ul>
+     <div class="main-part text-center">
+        <div class="row h100">
+            <div class="col-sm-12 mx-auto">
+                #parse( $template )
+            </div>
+        </div>
+     </div>
+
+    <!-- Footer -->
+    <footer class="fixed-bottom page-footer font-small cyan darken-3 pt-4">
+
+
+
+            <!--Grid row-->
+                <div class="row">
+                  <div class="col col-sm-2">
+                      <a href="">
+                          <img src="../dc.svg" alt="">
+                          <div class="mask rgba-white-light"></div>
+                      </a>
+                  </div>
+                  <div class="col col-sm-2">
+                          <a href="">
+                              <img src="../captain.svg" alt="">
+                              <div class="mask rgba-white-light"></div>
+                          </a>
+                  </div>
+
+                  <div class="col col-sm-2">
+                      <a href="">
+                          <img src="../iron.svg" alt="">
+                          <div class="mask rgba-white-light"></div>
+                      </a>
+                  </div>
+
+                  <div class="col col-sm-2">
+                      <a href="">
+                          <img src="../groot.svg" alt="">
+                          <div class="mask rgba-white-light"></div>
+                      </a>
+                  </div>
+
+                  <div class="col col-sm-2">
+                      <a href="">
+                          <img src="../superhero.svg" alt="">
+                          <div class="mask rgba-white-light"></div>
+                      </a>
+                  </div>
+
+                  <div class="col col-sm-2">
+                      <a href="">
+                          <img src="../justice.svg" alt="">
+                          <div class="mask rgba-white-light"></div>
+                      </a>
+                  </div>
+                </div>
+                <!--Grid row-->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">&copy; 2019 Copyright:
+        <a href="https://github.com/verisence/"> Verisence</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
   </body>
 </html>

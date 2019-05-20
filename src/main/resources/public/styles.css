@@ -1,0 +1,25 @@
+
+.space{
+    margin-bottom:30px;
+}
+.page-sizer{
+    margin-bottom:5%;
+}
+img{
+    height:50px;
+    width:50px;
+
+}
+body {
+  min-height: 100%;
+  height: auto !important;
+
+  overflow:hidden;
+}
+.card {
+width : 250px;
+margin-right: 10px;
+margin-top: 10px;
+display: inline-block;
+}
+
