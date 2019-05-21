@@ -2,8 +2,8 @@
 .space{
     margin-bottom:30px;
 }
-.page-sizer{
-    margin-bottom:5%;
+.main-part{
+    min-height: 800px;
 }
 img{
     height:50px;
@@ -11,10 +11,10 @@ img{
 
 }
 body {
-  min-height: 100%;
-  height: auto !important;
 
-  overflow:hidden;
+  height: auto !important;
+  margin-bottom: -80px;
+  overflow:scroll;
 }
 .card {
 width : 250px;
@@ -22,4 +22,5 @@ margin-right: 10px;
 margin-top: 10px;
 display: inline-block;
 }
+
 
